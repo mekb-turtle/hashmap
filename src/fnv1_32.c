@@ -1,6 +1,6 @@
 #include "fnv1_32.h"
 
-const uint32_t offset = 0x811c9dc5, prime = 0x01000193;
+static const uint32_t offset = 0x811c9dc5, prime = 0x01000193;
 
 uint32_t fnv1_32_hash_n(const void *data, size_t len) {
 	uint32_t hash = offset;

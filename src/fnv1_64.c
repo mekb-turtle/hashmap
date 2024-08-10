@@ -1,6 +1,6 @@
 #include "fnv1_64.h"
 
-const uint64_t offset = 0xcbf29ce484222325, prime = 0x00000100000001b3;
+static const uint64_t offset = 0xcbf29ce484222325, prime = 0x00000100000001b3;
 
 uint64_t fnv1_64_hash_n(const void *data, size_t len) {
 	uint64_t hash = offset;
