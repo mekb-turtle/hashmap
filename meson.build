@@ -5,7 +5,7 @@ project('hashmap', 'c',
 
 include = 'include'
 src = 'src'
-hashmap = library('hashmap', sources: [
+hashmap = static_library('hashmap', sources: [
   src/'hashmap.c',
   src/'fnv1_32.c',
   src/'fnv1_64.c'
